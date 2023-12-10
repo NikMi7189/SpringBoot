@@ -29,6 +29,11 @@ public class StudentController {
         return studentService.getStudentById(id).orElse(null);
     }
 
+    @GetMapping("/find")
+    public List<Student> findStudentByLastName(@RequestParam(name="lastname") String lastName) {
+        return studentService.findStudentsByLastName(lastName);
+    }
+
     @PostMapping
     public void addStudent(@RequestBody Student student) {
         studentService.addStudent(student);

@@ -14,7 +14,7 @@ public class Student {
     private String firstName;
     private String lastName;
     private String partonymicName;
-    private String group;
+    private String studentGroup;
     public Student() {
     }
 
@@ -22,7 +22,7 @@ public class Student {
         this.firstName = firstName;
         this.lastName = lastName;
         this.partonymicName = partonymicName;
-        this.group = group;
+        this.studentGroup = group;
     }
 
     public Long getId() {
@@ -57,12 +57,12 @@ public class Student {
         this.partonymicName = partonymicName;
     }
 
-    public String getGroup() {
-        return group;
+    public String getStudentGroup() {
+        return studentGroup;
     }
 
-    public void setGroup(String group) {
-        this.group = group;
+    public void setStudentGroup(String studentGroup) {
+        this.studentGroup = studentGroup;
     }
 
     @Override
@@ -74,11 +74,11 @@ public class Student {
                 Objects.equals(firstName, student.firstName) &&
                 Objects.equals(lastName, student.lastName) &&
                 Objects.equals(partonymicName, student.partonymicName) &&
-                Objects.equals(group, student.group);
+                Objects.equals(studentGroup, student.studentGroup);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, partonymicName, group);
+        return Objects.hash(id, firstName, lastName, partonymicName, studentGroup);
     }
 }
