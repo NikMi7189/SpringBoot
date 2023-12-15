@@ -13,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 @SpringBootTest
-public class StudentSpringBootApplicationTests {
+public class StudentServiceTests {
 
 	@Autowired
 	private StudentService studentService;

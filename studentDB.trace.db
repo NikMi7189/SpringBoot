@@ -157,3 +157,6 @@ Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/NikMi/I
 	at org.h2.mvstore.SingleFileStore.open(SingleFileStore.java:81)
 	at org.h2.mvstore.MVStore.<init>(MVStore.java:286)
 	... 132 more
+2023-12-15 21:12:39.293302+08:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Объект уже закрыт
+The object is already closed [90007-224]
